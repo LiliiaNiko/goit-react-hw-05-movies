@@ -14,7 +14,6 @@ const MovieDetails = () => {
   useEffect(() => {
     getMovieById(Number(movieId)).then(setMovie);
   }, [movieId]);
-  console.log(movie);
 
   return (
     <>

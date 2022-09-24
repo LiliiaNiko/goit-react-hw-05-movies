@@ -22,7 +22,7 @@ const Movies = () => {
     }
     getSearchedMovie(movieName).then(movie => setMovies(movie));
   }, [movieName]);
-  console.log(movies);
+  
 
   return (
     <div>
