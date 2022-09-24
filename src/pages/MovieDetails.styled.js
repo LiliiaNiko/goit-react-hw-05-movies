@@ -18,4 +18,14 @@ export const InfoLink = styled(Link)`
 export const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
+  border-bottom: 3px solid #ececec;
+`;
+
+export const MovieInfoWrap = styled.div`
+  display: flex;
+  border-bottom: 3px solid #ececec;
+`;
+
+export const MovieInfo = styled.div`
+  margin-right: 24px;
 `;
