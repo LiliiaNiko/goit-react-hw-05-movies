@@ -40,8 +40,12 @@ const MovieDetails = () => {
 
       <h2>Additional information</h2>
       <InfoContainer>
-        <InfoLink to="cast">Cast</InfoLink>
-        <InfoLink to="reviews">Reviews</InfoLink>
+        <InfoLink to="cast" state={{ from: location.state.from }}>
+          Cast
+        </InfoLink>
+        <InfoLink to="reviews" state={{ from: location.state.from }}>
+          Reviews
+        </InfoLink>
       </InfoContainer>
       <Suspense fallback={<div>Loading subpage...</div>}>
         <Outlet />
